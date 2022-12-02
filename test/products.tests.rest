@@ -1,0 +1,49 @@
+### PRODUCTS
+GET http://localhost:3000/products
+
+### GET SPECIFIC PRODUCT
+GET http://localhost:3000/products/160
+
+### ADD PRODUCT 1
+POST http://localhost:3000/products
+content-type: application/json
+
+{
+    "title": "product1-title",
+    "description": "product1-description",
+    "price": 1000
+}
+
+### ADD PRODUCT 2
+POST http://localhost:3000/products
+content-type: application/json
+
+{
+    "title": "product2-title",
+    "description": "product2-description",
+    "price": 2500
+}
+
+### ADD PRODUCT 3
+POST http://localhost:3000/products
+content-type: application/json
+
+{
+    "title": "product3-title",
+    "description": "product3-description",
+    "price": 5000
+}
+
+### UPDATE PRODUCT
+
+PUT http://localhost:3000/products/888
+content-type: application/json
+
+{
+    "title": "Product title update",
+    "description": "product desc update",
+    "price": 12500
+}
+
+### DELETE PRODUCT
+DELETE http://localhost:3000/products/888
